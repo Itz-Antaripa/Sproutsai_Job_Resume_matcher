@@ -1,0 +1,10 @@
+openai~=1.3.0
+pymupdf
+unidecode~=1.3.7
+pandas~=2.1.3
+streamlit~=1.28.2
+sklearn~=0.0.post11
+sentence_transformers
+fuzzywuzzy~=0.18.0
+scikit-learn~=1.3.2
+setuptools~=65.5.1
