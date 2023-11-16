@@ -1,0 +1,7 @@
+setup.py
+src/SproutsAI.egg-info/PKG-INFO
+src/SproutsAI.egg-info/SOURCES.txt
+src/SproutsAI.egg-info/dependency_links.txt
+src/SproutsAI.egg-info/top_level.txt
+test/test_jd_parse.py
+test/test_resume_parse.py
