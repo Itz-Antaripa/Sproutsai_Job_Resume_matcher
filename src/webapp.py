@@ -26,37 +26,46 @@ def auto_score_and_display(data_type):
     response = requests.post(SCORE_ENDPOINT, params={"data_type": data_type})
     if response.status_code == 200:
         top_matches = response.json()["top_matches"]
-        st.write("Top 5 Matches:", top_matches)
+        st.write(f"Top {data_type} matches:")
+        for match in top_matches:
+            st.subheader(f"ID: {match['id']}, Score: {match['score']}")
+            for key, value in match["parsed_data"].items():
+                st.text(f"{key.capitalize()}: {value}")
+            st.write("----------------------------------------")
     else:
         st.error("Error in scoring.")
 
 
 def main():
     st.title("Resume and Job Description Parser")
+
     # Upload Resume
     st.header("Upload Resume:")
     resume_file = st.file_uploader("Upload Resume (PDF)", type=["pdf"])
-
-    # Upload Job Description
-    st.header("Upload Job Description:")
-    jd_text = st.text_area("Paste Job Description Text")
-
     if resume_file:
         st.success("Resume uploaded successfully!")
         resume_text = textparser.extract_pdf_data(resume_file)
         parse_and_update_resume(resume_text)
-        auto_score_and_display(data_type="resumes")
+
+    # Upload Job Description
+    st.header("Upload Job Description:")
+    jd_text = st.text_area("Paste Job Description Text", key="jd_text")
     if jd_text:
         parse_and_update_job_description(jd_text)
-        auto_score_and_display(data_type="job_descriptions")
-    else:
-        st.warning("Please upload a resume pdf or paste a job description text.")
 
-    # Additional instructions or information
+
+    # Button to trigger scoring
+    if st.button("Get matches"):
+        if jd_text:
+            auto_score_and_display(data_type="job_descriptions")
+        elif resume_file:
+            auto_score_and_display(data_type="resumes")
+        else:
+            st.warning("Please upload a resume pdf or paste a job description text.")
+
     st.sidebar.info(
         "Instructions: Upload your resume in PDF format or paste a job description to find the best matching resumes.")
 
 
 if __name__ == "__main__":
     main()
-

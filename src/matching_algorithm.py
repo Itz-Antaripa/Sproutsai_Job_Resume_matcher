@@ -1,5 +1,6 @@
 from fuzzywuzzy import fuzz
 from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
 
 from reusable_functions import get_embedding
 
@@ -42,11 +43,11 @@ class Scorer:
         # Fuzzy matching for title and domain
         title_match = fuzz.partial_ratio(self.resume["job_title"].lower(), self.job["job_title"].lower())
         domain_match = max(
-            fuzz.partial_ratio(domain.lower(), self.job["industry/domain"].lower()) for domain in self.resume["domain"])
+            fuzz.partial_ratio(domain.lower(), self.job["domain"].lower()) for domain in self.resume["domain"])
         # Embeddings matching
-        resume_title_embedding = get_embedding(self.resume["job_title"] + "," + ",".join(self.resume["domain"]))
-        job_title_embedding = get_embedding(self.job["job_title"] + "," + self.job["domain"])
-        domain_similarity = cosine_similarity(resume_title_embedding, job_title_embedding)
+        resume_title_embedding = np.array(get_embedding(self.resume["job_title"] + "," + ",".join(self.resume["domain"]))).reshape(1, -1)
+        job_title_embedding = np.array(get_embedding(self.job["job_title"] + "," + self.job["domain"])).reshape(1, -1)
+        domain_similarity = cosine_similarity(resume_title_embedding, job_title_embedding)[0][0]
         # Combine keyword matching and embeddings similarity
         score = max(title_match, domain_match, domain_similarity)
         return round(score, 2)
@@ -57,9 +58,9 @@ class Scorer:
             fuzz.partial_ratio(skill.lower(), job_skill.lower()) for skill in self.resume["skills"] for job_skill in
             self.job["skills_required"])
         # Embeddings matching
-        resume_skills_embedding = get_embedding(" ".join(self.resume["skills"]))
-        job_skills_embedding = get_embedding(" ".join(self.job["skills_required"]))
-        skills_similarity = cosine_similarity(resume_skills_embedding, job_skills_embedding)
+        resume_skills_embedding = np.array(get_embedding(" ".join(self.resume["skills"]))).reshape(1, -1)
+        job_skills_embedding = np.array(get_embedding(" ".join(self.job["skills_required"]))).reshape(1, -1)
+        skills_similarity = cosine_similarity(resume_skills_embedding, job_skills_embedding)[0][0]
         # Combine fuzzy matching and embeddings similarity
         combined_score = (max_skill_similarity + skills_similarity) / 2
         return round(combined_score, 2)

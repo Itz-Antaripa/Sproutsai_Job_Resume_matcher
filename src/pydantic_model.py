@@ -21,6 +21,5 @@ class ResumeParsedData(BaseModel):
     skills: List[str]
     total_work_experience: float
     education: str
-    job_location: str
-    job_type: str
+    location: str
     domain: List[str]

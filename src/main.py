@@ -49,6 +49,18 @@ async def score_latest(data_type: str = Query(..., description="Type of Data (re
             scorer = Scorer(resume=latest_resume, job=jd)
             score = scorer.calculate_final_score()
             scores.append({"jd_id": jd["_id"], "score": score})
+            scores.append({
+                "id": jd["jd_id"],
+                "score": score,
+                "parsed_data": {
+                    "job_title": jd["job_title"],
+                    "skills_required": jd["skills_required"],
+                    "experience_required": jd["experience_required"],
+                    "job_location": jd["job_location"],
+                    "domain": jd["domain"]
+                }
+            })
+
         top_scores = sorted(scores, key=lambda x: x['score'], reverse=True)[:5]
     else:
         latest_job_desc = db.job_descriptions.find().sort([("_id", -1)]).limit(1)[0]
@@ -57,7 +69,16 @@ async def score_latest(data_type: str = Query(..., description="Type of Data (re
         for resume in resumes:
             scorer = Scorer(resume=resume, job=latest_job_desc)
             score = scorer.calculate_final_score()
-            scores.append({"resume_id": resume["_id"], "score": score})
+            scores.append({
+                "id": resume["resume_id"],
+                "score": score,
+                "parsed_data": {
+                    "job_title": resume["job_title"],
+                    "skills": resume["skills_required"],
+                    "total_work_experience": resume["total_work_experience"],
+                    "domain": resume["domain"]
+                }
+            })
         top_scores = sorted(scores, key=lambda x: x['score'], reverse=True)[:5]
 
     return JSONResponse(content={"top_matches": top_scores})

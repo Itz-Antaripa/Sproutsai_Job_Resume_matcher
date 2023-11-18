@@ -27,5 +27,5 @@ def get_embedding(text):
         model="text-embedding-ada-002",
         input=text
     )
-    embedding = response['data'][0]['embedding']
+    embedding = response.data[0].embedding
     return embedding
