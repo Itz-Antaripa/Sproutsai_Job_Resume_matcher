@@ -24,11 +24,11 @@ The return type of response must be in json format like:
 {
     "job_title": "Machine Learning Engineer",
     "skills_required": ["Python", "Pytorch", "Numpy", "c++", "GCP"],
-    "experience_required": "3",
+    "experience_required": 3,
     "minimum_education": "Bachelors",
     "job_location": "Hyderabad",
     "job_type": "hybrid",
-    "domain": "domain on which the companyis hiring for"
+    "domain": "domain on which the company is hiring for"
 }
 
 Note:
@@ -65,6 +65,7 @@ The return type of response must be in json format like:
 
 Note:
 If some data is not found in resume keep that empty string "".
+For education only take the latest degree.
 For job_title extract the latest one from work experience, for someone with no experience give a desired job_title based on projects done, and other context in resume.
 For location take the latest job location from work experience like -> state, country. If there's no work experience then take location details from last education.
 Skills need to be extracted from both the skills section and if anything is mentioned in work experience projects.
