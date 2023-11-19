@@ -1,0 +1,177 @@
+[{
+  "_id": {
+    "$oid": "65593de444252f93ab0cbb4a"
+  },
+  "resume_id": 1,
+  "job_title": "Applied Scientist",
+  "skills": [
+    "Python",
+    "SQL",
+    "ScikitLearn",
+    "SpaCy",
+    "Pandas",
+    "Numpy",
+    "Pytorch",
+    "Flask",
+    "Langchain",
+    "LlamaIndex",
+    "PySpark",
+    "Airflow",
+    "GCP",
+    "Huggingface",
+    "Snorkel",
+    "Postman",
+    "Streamlit",
+    "Pinecone",
+    "ChromaDB"
+  ],
+  "total_work_experience": 1.5,
+  "education": "Bachelor of Technology - Electrical Engineering",
+  "location": "Remote",
+  "domain": [
+    "Data Science",
+    "Machine Learning",
+    "Natural Language Processing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "65594b300c261b48f59abaa9"
+  },
+  "resume_id": 2,
+  "job_title": "Machine Learning Engineer",
+  "skills": [
+    "Python",
+    "C",
+    "C++",
+    "SQL",
+    "Scikit-learn",
+    "Pytorch",
+    "Tensorflow-Keras",
+    "OpenCV",
+    "GitHub",
+    "Tableau",
+    "Web-Scraping",
+    "Matlab",
+    "HTML",
+    "CSS",
+    "Bash",
+    "Java"
+  ],
+  "total_work_experience": 0.8,
+  "education": "B.Tech in Information & Communication Technology",
+  "location": "Hyderabad, India",
+  "domain": [
+    "Computer Vision",
+    "NLP",
+    "Classic Machine Learning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "655958ae2bb171ce17ca7abd"
+  },
+  "resume_id": 3,
+  "job_title": "NLP Research Intern",
+  "skills": [
+    "Python",
+    "NLP",
+    "Web Scraping",
+    "Data Analysis",
+    "Data Structure and Algorithms",
+    "Git",
+    "Linux",
+    "BeautifulSoup",
+    "Sklearn",
+    "OpenCV",
+    "NLTK",
+    "Keras",
+    "Tensorflow",
+    "Numpy",
+    "Pandas",
+    "Matplotlib",
+    "Seaborn"
+  ],
+  "total_work_experience": 1.8,
+  "education": "Bachelor of Technology, Computer Science",
+  "location": "Noida, India",
+  "domain": [
+    "NLP",
+    "Computer Vision"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6559b78172d4ec84d3e31eae"
+  },
+  "resume_id": 4,
+  "job_title": "Software Development Engineer",
+  "skills": [
+    "Java",
+    "AWS",
+    "Python",
+    "Selenium",
+    "C/C++",
+    "Angular",
+    "ME(A/R)N",
+    "SQL",
+    "Spring Boot",
+    "Data Structures",
+    "Competitive Programming"
+  ],
+  "total_work_experience": 1.5,
+  "education": "BE - Computer Engineering",
+  "location": "Bangalore, India",
+  "domain": [
+    "Amazon Distribution & Fulfilment Services",
+    "Fintech - DP&A, Enterprise Business Services"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6559bc8f7171fd9a8473e58d"
+  },
+  "resume_id": 5,
+  "job_title": "Data Scientist",
+  "skills": [
+    "R",
+    "Python",
+    "Tableau",
+    "PowerBI",
+    "Statistics",
+    "SQL",
+    "Data Visualization",
+    "Keras",
+    "TensorFlow",
+    "Pytorch",
+    "OpenCV",
+    "Machine Learning",
+    "Deep learning",
+    "PostgreSQL",
+    "Redshift",
+    "Excel",
+    "SPSS",
+    "Minitab",
+    "PowerPoint",
+    "HTML",
+    "Forms",
+    "AWS",
+    "EC2",
+    "Flask",
+    "DataRobot",
+    "Docker",
+    "GCP",
+    "Big Data",
+    "Hadoop",
+    "Hive",
+    "Spark",
+    "Rest API"
+  ],
+  "total_work_experience": 2.8,
+  "education": "M.Tech Data Analytics",
+  "location": "Dhanbad, India",
+  "domain": [
+    "Data Science",
+    "Healthcare Data Platform"
+  ]
+}]

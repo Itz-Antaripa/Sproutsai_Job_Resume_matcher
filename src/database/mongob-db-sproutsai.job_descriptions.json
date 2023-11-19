@@ -1,0 +1,146 @@
+[{
+  "_id": {
+    "$oid": "65591da173df0850c27d7eb6"
+  },
+  "jd_id": 1,
+  "job_title": "Machine Learning Engineer",
+  "skills_required": [
+    "Python",
+    "ML frameworks",
+    "Computer Vision",
+    "Natural Language Processing (NLP)",
+    "Content Interpretation",
+    "Data Preprocessing",
+    "Feature Engineering",
+    "Model Evaluation",
+    "MLOps - AWS Sage-maker, Kubeflow, MLFlow, MLRun, DVC"
+  ],
+  "experience_required": 3,
+  "minimum_education": "",
+  "job_location": "Bengaluru",
+  "job_type": "in-office",
+  "domain": "",
+  "jd_text": "Machine Learning Engineer at Alle\n₹30L – ₹45L • 0.1% – 0.5%\nSave\nApply\nWe're building an AI-powered personal assistant to help consumers plan for shopping, travel, and personal goals. This app will make the content, curated by the user (think screenshots & links) - intelligent and actionable.\n\nAs an ML Engineer at Alle, you'll play a pivotal role in transforming our vision into reality. You will work closely with our product and engineering teams to design, develop, and deploy AI models that will power our app & chatbot.\n\nKey responsibilities:\n\nInvestigate and adopt the latest ML techniques relevant to content & context understanding, user behaviour prediction, and task automation.\nCollaborate with the product team to understand user needs and tailor ML solutions accordingly.\nDesign, implement, and optimize machine learning algorithms to extract insights from user-curated content.\nCollaborate with the development team to integrate ML models into the app and chatbot, ensuring a seamless user experience.\nContinuously monitor and refine model performance in production environments.\nQualifications:\n\n3+ years of hands-on experience in developing and deploying machine learning models\nExperience with computer vision, natural language processing (NLP) or content interpretation techniques\nProficiency in Python and ML frameworks\nExperience with data preprocessing, feature engineering, and model evaluation\nExperience in MLOps - AWS Sage-maker, Kubeflow, MLFlow, MLRun, DVC\nStrong problem-solving skills and attention to detail\nJoining us at such an early stage gets you:\n\nDirectly influence the company's direction and product evolution\nExperience rapid growth through hands-on challenges\nYour contributions will have a clear, visible impact\nESOPs that can create a large financial outcome for you\nWork directly with the founders on key company initiatives\nFoster deep relationships in a tight-knit team\nPotential for rapid role advancement and leadership opportunities\nApply now\nLocation\nBengaluru\nJob type\nFull Time\nVisa sponsorship\nAvailable\nRemote work policy\nIn office\nRelocation\nAllowed\nExperience\n3+ years\nSkills\nMachine Learning"
+},
+{
+  "_id": {
+    "$oid": "655924dd73df0850c27d7eb7"
+  },
+  "jd_id": 2,
+  "job_title": "Computer Vision Engineer",
+  "skills_required": [
+    "Python",
+    "C++",
+    "Convolutional Neural Networks",
+    "Graph Convolutional Networks (GCNs)",
+    "Transformers"
+  ],
+  "experience_required": 3,
+  "minimum_education": "BE/MS or PhD degree in Computer Science, Computer Vision, Deep Learning, Machine Learning, or related technical field preferred",
+  "job_location": "Bengaluru",
+  "job_type": "Full Time",
+  "domain": "Computer Vision",
+  "jd_text": "Computer Vision Engineer at Tonbo Imaging Pvt.Ltd\n$20k – $25k\nSave\nApply\nWe are looking for an exceptional software engineer with a proven track record in a computer vision and graphics (e.g. multiple view geometry, deep learning, object detection/tracking ). As a computer vision engineer, you'll be solving challenges that are at the confluence of real-time vision and augmented reality.\n\nResponsibilities\nThe ideal candidate should be comfortable making significant contributions in a few of the following categories:\n\nDeveloping creative computer vision and imaging software\nDeveloping novel real-time classification algorithms for defense\nApplying machine learning to computer vision problems.\nResearching and prototyping techniques and algorithms for object detection and recognition.\nDeveloping robust software for integrating multiple sensors and tracking systems.\nPrototyping hardware and software solutions for tracking, detection, classification and modeling.\nRequirements:\n\nBE/MS or PhD degree in Computer Science, Computer Vision, Deep Learning, Machine Learning, or related technical field preferred.\n3+ years developing and designing Computer Vision technologies and systems\n3+ years of experience engineering in C++\nStrong background in Computer Vision.\nFast prototyping skills\nPractical knowledge of machine learning, Bayesian filtering, information theory, deep learning, image classification and 3D geometry\nApply now\nLocation\nBengaluru\nJob type\nFull Time\nVisa sponsorship\nNot Available\nRemote work policy\nIn office - WFH flexibility\nRelocation\nAllowed\nSkills\nPython\nC++\nConvolutional Neural Networks\nGraph Convolutional Networks (GCNs)\nTransformers"
+},
+{
+  "_id": {
+    "$oid": "6559393973df0850c27d7eb9"
+  },
+  "jd_id": 3,
+  "job_title": "Senior Data Scientist",
+  "skills_required": [
+    "NLP",
+    "feature engineering",
+    "model selection",
+    "parameter tuning",
+    "model explainability",
+    "Python",
+    "Tensorflow",
+    "PyTorch"
+  ],
+  "experience_required": 4,
+  "minimum_education": "Bachelor's Degree",
+  "job_location": "Remote",
+  "job_type": "Full-time",
+  "domain": "Data Science",
+  "jd_text": "Senior Data Scientist\nSocure · India\nRemote  Full-time  Mid-Senior level\n\nAbout the job\nPredictive analytics and machine learning power Socure’s groundbreaking technology and fuel our mission to verify 100% of good identities in real time and completely eliminate identity fraud on the internet.\n\nSocure is the world leader in digital identity verification and fraud prevention. Our recent awards include Forbes 2022 America’s Best Startup Employers, The Forbes Cloud 100, The Deloitte Technology Fast 500, and Inc. 5000’s fastest growing companies.\n\nListen to why some of the world’s top technology investors see the enormous, transformative potential in Socure’s mission and products:\n\nhttps://www.youtube.com/watch?v=ifM9_jPQCv8\n\nWe are seeking an exceptional Senior Data Scientist to lead our data science team, with a strong focus on feature engineering, model selection, parameter tuning, explainability, and driving innovation through research and development. As a Senior Data Scientist at Socure, you will play a pivotal role in shaping our data-driven strategies, staying ahead of industry trends, and championing a culture of continuous learning and knowledge dissemination.\n\nWhat you’ll be doing:\n\nLead the development and optimization of cutting-edge models, with a particular emphasis on NLP models. \nDrive innovation in modeling techniques and methodologies, staying at the forefront of data science advancements. \nSpearhead feature engineering efforts to extract meaningful insights from complex datasets. \nIdentify and create new features to enhance model performance and predictive accuracy. \nTake charge of model selection processes, ensuring the adoption of the most suitable algorithms for diverse projects. \nFine-tune model parameters to optimize model performance and generalization. \nImplement and champion model explainability techniques, ensuring transparency and interpretability in our models. \nLead research initiatives to explore new data science technologies and methodologies. \nStay current with the latest literature in data science and incorporate relevant findings into our projects. \nIdentify challenger models to benchmark against existing models and drive continuous improvement. \nSuggest and develop new features based on domain knowledge and data insights. \nEducate and mentor team members, fostering a culture of continuous learning and growth. \nDisseminate knowledge through training sessions, documentation, and presentations. \nUnderstand the compliance and regulatory landscape, ensuring our data science solutions align with industry standards. \nMonitor and analyze competitor moves in the data science and AI space, providing insights to inform our strategies. \nExplore opportunities for patent submissions based on innovative data science solutions and methodologies. \n\nWhat you’ll bring:\n\nBachelor’s Degree in a quantitative field (e.g., Computer Science, Statistics, Mathematics). \n4-6 years of related work experience. \nProven track record of developing and optimizing complex machine learning models, especially in NLP. \nExtensive experience in feature engineering, model selection, and parameter tuning. \nStrong expertise in model explainability techniques. \nDemonstrated ability to drive R&D initiatives and stay up-to-date with data science literature. \nProficiency in programming languages like Python and relevant data science libraries. \nExperience with Tensorflow and/or PyTorch, two leading deep learning frameworks. \nExcellent communication and mentorship skills. \nAwareness of competitor strategies and moves in the data science field. \n\nPreferred Qualifications:\n\nAdvanced degree (Master's or Ph.D.) and commensurate experience. \nProficiency in building and interpreting decision tree models for insightful data-driven decision-making. \nMastery of LSTM (Long Short-Term Memory), crucial in sequence modeling and time-series analysis. \nFamiliarity with Transformers architecture and Masked Language Models, driving advances in NLP. \nUnderstanding of different embedding techniques, and the use of pre-trained models. \nSkill in text classification algorithms for organizing and categorizing textual data. \nExpertise in sentiment analysis. \nProven expertise in fine-tuning Large Language Models (LLMs) for specific tasks. \nExperience in entity resolution techniques, ensuring accurate data linkage and integration. \nExperience with Spark and Databricks, facilitating efficient data analysis and model training at scale. \nFamiliarity with Amazon Web Services (AWS), harnessing its cloud capabilities for data processing and deployment. \nKnowledge of infrastructure as code using Terraform, facilitating smooth deployment and scaling. \nFamiliarity with Scala, a versatile programming language for building robust data pipelines. \nFamiliarity with compliance and regulatory requirements in relevant industries. \nExperience with patent submissions. \n\nIf you are a seasoned data scientist with a passion for innovation, we encourage you to apply. Join us at Socure, where innovation, inclusivity, and continuous improvement are the cornerstones of our success. Your expertise will be pivotal in achieving our mission.\n\nSocure is all about encouraging people to push the boundaries of what’s possible through top-tier performance, innovation, ownership, and shared expertise.\n\nWe empower excellence by providing great perks and benefits to both our fully remote employees in North America and our hybrid teams in India."
+},
+{
+  "_id": {
+    "$oid": "655950e8074888ebe6ee6418"
+  },
+  "jd_id": 4,
+  "job_title": "Machine Learning Engineer (NLP)",
+  "skills_required": [
+    "Python",
+    "NLP",
+    "Deep Learning",
+    "GPT",
+    "BERT",
+    "T5",
+    "Spacy",
+    "NLTK",
+    "Gensim",
+    "Hugging Face transformers",
+    "FastAPI/Flask",
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+    "Git",
+    "AWS",
+    "GCP",
+    "Azure",
+    "SQL",
+    "NoSQL",
+    "Neo4j",
+    "Numpy",
+    "Scikit-learn",
+    "Pandas",
+    "PyTorch",
+    "TensorFlow",
+    "Keras"
+  ],
+  "experience_required": 2,
+  "minimum_education": "Bachelor's degree or higher in Computer Science or related field",
+  "job_location": "Remote • India",
+  "job_type": "remote",
+  "domain": "Edtech",
+  "jd_text": "Machine Learning Engineer (NLP)\n(2+ years exp)\n₹10L – ₹16L • No equity\nJob Type\nFull Time\nVisa Sponsorship\nAvailable\nRemote Policy\nOnsite or remote\nLocation\nRemote • India\nHires Remotely In\nIndia\nRelocation\nAllowed\nSkills\nPython\nNLP\nAbout the job\nAbout Us: LearnTube is a global, AI-driven product that transforms the scattered content of the internet and YouTube into bite-sized courses complete with a structured path, auto-generated assessments & peer-interactions. Hyper-personalised course content is further generated specific to each user & their goal.\n\nWe have 6 Lakh Learners, across 64 different countries & 2112 cities in India. LearnTube provides 200+ Skill courses in domains like Tech, Marketing, Data Science and Design. These courses are rated an awesome 4.8/5 & are delivered through an easy-to-use Whatsapp Bot, a mobile and a web app. Our courses are co-certified by global brands liks Canva, Zoho, Hootsuite, Semrush, Wix & more while 900+ companies including brands like Amazon, Schbang, Foxymoron, Publicis media, Popxo, DU Times hire from us.\n\nLatest Press Coverage: Wellfound (formerly Angelist) featured LearnTube in it's Top 10 Global Ed-Tech Startups due to its innovative work done by a top team! Check out the article here!\n\nThe founder of LearnTube, Mr Shronit Ladhani has a single vision: to build a billion courses for a billion people. Courses are hyper-personalised, affordable, engaging & leading to outcomes. Check out his LinkedIn here\n\nYour Role:\nAs we are an AI-powered Edtech company, your main goal would be utilizing Artificial Intelligence for Education. You will be working on building a personalized course creation system, video processing and recommendation engine, knowledge graphs & other such projects end to end from development to deployments.\n\nResponsibilities:\n\nPrototype ideas rapidly, drive architecture discussions, and propose solutions to system and product changes.\nPrompt engineering LLMs like GPTs, LLaMA, Claude for various NLP tasks for zero-shot/few-shot inference.\nBuild recommendation engines that personalize content for the learners.\nSelect/collect appropriate annotated data for training/fine-tuning ML models.\nUse effective text representations to transform natural language into useful features.\nDevelop & train ML/DL/NLP models according to requirements.\nExtend ML libraries and frameworks to apply in NLP tasks.\nTest and deploy trained models/systems on cloud services i.e. AWS/GCP/Azure.\nRequirements:\n\nBachelor's degree or higher in Computer Science or related field.\nMinimum of 2 years of experience in NLP, Machine Learning, and Deep Learning.\nKnowledge of Deep Learning model optimization, transfer learning, and prompt engineering with LLMs like GPT3, GPT3.5, GPT4, and Claude.\nExperience with state-of-the-art NLP models such as GPT, BERT, T5, and transformer-based models.\nFamiliarity with NLP techniques, libraries, and technologies, including Spacy, NLTK, Gensim, and Hugging Face transformers.\nProven ability to develop, deploy, and monitor large scale systems in production environments.\nKnowledge on MLOps - FastAPI/Flask, Docker and/or Kubernetes, CI/CD, and Git is desirable.\nFamiliarity with cloud environments like AWS or GCP or Azure.\nKnowledge on SQL and NoSQL database experience is preferred.\nExperience in building Knowledge graphs using Neo4j is preferred.\nExpertise in Python, and ML libraries like Numpy, Scikit-learn, and Pandas.\nProficiency in ML frameworks like PyTorch, TensorFlow, and Keras.\nAbility to work as a team player and independently.\nExcellent communication, multi-tasking, and time-management skills with the ability to prioritize tasks."
+},
+{
+  "_id": {
+    "$oid": "65595678ea5413a97b00b87c"
+  },
+  "jd_id": 5,
+  "job_title": "Data Scientist, Machine Learning",
+  "skills_required": [
+    "Python",
+    "SQL"
+  ],
+  "experience_required": 8,
+  "minimum_education": "Degree in a technical field such as Statistics, Computer Science, or similar field",
+  "job_location": "Palo Alto",
+  "job_type": "Full Time",
+  "domain": "Machine Learning",
+  "jd_text": "Data Scientist, Machine Learning at Aptos\n$160k – $260k\nSave\nApply\nAbout The Role\n\nWe are searching for an experienced Data Scientist with a focus on Machine Learning to join our team. Aptos recently entered a partnership with Microsoft to explore the opportunities between Web3 and AI. You will be responsible for exploring opportunities within this space. This includes our current efforts in building AI-driven chatbots that teach people about development on Aptos and empower them to query on-chain state. You will explore the collaboration between AI and blockchain. Beyond that, we’re excited to explore co-development or co-piloting experiences and building products with our product teams. We are looking for a bold thinker who has the ability to execute well; in return, you will receive a lot of autonomy and ownership over the projects you tackle.\n\nThis role sits in our Palo Alto, CA office.\n\nWhat you'll be doing:\n\nBuild best-in-class AI chatbots that guide users through their Aptos journey by translating our research papers, blogs, and technical documentation into more accessible content\nImprove and optimize LLMs for use in production systems\nDefine, build, and deliver data pipelining architecture for AI-driven applications.\nWork with the product teams to explore opportunities for AI-driven experiences.\nWork with platform and language development teams to build a first-in-class Move language and Aptos Dapp co-pilot experience.\nWhat we’re looking for:\n\n8+ years of relevant experience\nA degree in a technical field such as Statistics, Computer Science, or similar field\nStrong data wrangling and SQL skills. You have a track record of optimizing large pipelines to run very efficiently\nExperience in at least one programming language (e.g. Python)\nExperience manipulating large amounts of structured and unstructured data through pipeline development tools like Airflow\nBe able to proactively manage prioritization of work and deliver work with great quality and influence the broader team in creating leverage\nThe base salary range for this full-time position is $160k - $260k. The range displayed on each job posting reflects the minimum and typical maximum target for new hire salaries for the position of a candidate based in the Bay Area at any level. We do hire exceptionally talented professionals with decades of experience in their field. As such, our range may be higher than what is displayed. Our base salary ranges are determined by experience and location, and we hire at all levels for multiple roles. Within the range, individual pay is determined by work location, job-related skills demonstrated during the interviews, working experience, and relevant education or training. Please note that the compensation details listed in role postings reflect the base salary only and do not include equity, tokens, or benefits.\n\nApply now\nLocation\nPalo Alto\nJob type\nFull Time\nVisa sponsorship\nNot Available\nRelocation\nAllowed\n"
+},
+{
+  "_id": {
+    "$oid": "6559b55f6898ecadef7c2155"
+  },
+  "jd_id": 6,
+  "job_title": "Java Back-end developer",
+  "skills_required": [
+    "Java",
+    "MySQL",
+    "Product Development",
+    "Spring Boot",
+    "MongoDB/PostgresSQL"
+  ],
+  "experience_required": 2,
+  "minimum_education": "",
+  "job_location": "Bengaluru",
+  "job_type": "Full Time",
+  "domain": "",
+  "jd_text": "Java Back-end developer (2-5 years experience)\nJob Type\nFull Time\nVisa Sponsorship\nNot Available\nLocation\nBengaluru\nRelocation\nAllowed\nSkills\nJava\nMySQL\nProduct Development\nSpring Boot\nMongoDB/PostgresSQL\nAbout the job\nAbout Leap Finance:\n\nLeap Finance supports future leaders from Asia in their quest for global careers. We create modern financial products and services that help Asian students pursue a global career. You can also think of us as a modern bank for migrants!\n\nOur first product is a Graduate education financing platform, designed specifically for Indian students. Leap’s unique platform reduces the cost of borrowing for meritorious Indian students, connecting them with global capital providers.\nWe’re starting with India with a plan to expand in SEA next year.\n\nWe are a young & ambitious, fast growing company.\nWe offer meaningful work, an invigorating work environment and great perks\n\nPlans for 2020\nWe have launched our first product, a graduate student loan. You can check it out at www.leapfinance.com\nWe have raised a Series A from a global blue-chip fund.\nWe are currently building the core team to roll out new product lines and deepen the existing one.\n\nSummary of requirement:\nWe are building the core team and looking for a founding engineer - someone who can take ownership and deliver independently\n\nDetails / What we are looking for:\n\nThe ideal candidate will have:\n● 2-5 years of experience in an engineering role\n● Willingness to contribute across the Back-end tech stack\n● Strong bias for Full-stack experience\n● Expertise in at least one popular web framework and testing tool.\n● Experience in working with third party APIs\n● Experience with fintech is a plus\n● Experience with an early stage startup is a plus\n\nWhy is this a great opportunity for the right candidate:\n● Experienced founding team\n● Become an integral and trusted member of the tech team mentored by professional with 10+ years of experience.\n● Right to win - The founding team knows the business & its secrets inside out. We are starting with a significant head start and a precise plan of action\n● Barriers to entry - This is a specialized play with natural barriers to entry, allowing for significant value creation for all equity holders\n● Backed by marquee global investors\n● A founding engineer role at a fast growing start-up. There is no glass ceiling for this role that limits your growth\n● Own all things - engineering & technology - from day 0. Full ownership & autonomy - own the culture\n● Exposure to all aspects of company building - exposure to investors, fund-raising, decision making, building the team & culture\n● Significant equity ownership\n● All of the above perks of joining a high potential company very early, along with a competitive market salary."
+}]
