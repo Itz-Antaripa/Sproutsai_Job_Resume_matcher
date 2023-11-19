@@ -1,4 +1,3 @@
-from fuzzywuzzy import fuzz
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
@@ -40,16 +39,14 @@ class Scorer:
 
     # title and domain matching
     def title_domain_matching(self):
-        # Fuzzy matching for title and domain
-        title_match = fuzz.ratio(self.resume["job_title"].lower(), self.job["job_title"].lower())
-        domain_match = max(
-            fuzz.ratio(domain.lower(), self.job["domain"].lower()) for domain in self.resume["domain"])
         # Embeddings matching
-        resume_title_embedding = np.array(get_embedding(self.resume["job_title"] + "," + ",".join(self.resume["domain"]))).reshape(1, -1)
-        job_title_embedding = np.array(get_embedding(self.job["job_title"] + "," + self.job["domain"])).reshape(1, -1)
-        domain_similarity = cosine_similarity(resume_title_embedding, job_title_embedding)[0][0]
-        # Combine keyword matching and embeddings similarity
-        score = max(title_match/100, domain_match/100, domain_similarity)
+        resume_title_embedding = np.array(get_embedding(self.resume["job_title"])).reshape(1, -1)
+        resume_domain_embedding = np.array(get_embedding(",".join(self.resume["domain"]))).reshape(1, -1)
+        job_title_embedding = np.array(get_embedding(self.job["job_title"])).reshape(1, -1)
+        title_similarity = cosine_similarity(resume_title_embedding, job_title_embedding)[0][0]
+        domain_similarity = cosine_similarity(resume_domain_embedding, job_title_embedding)[0][0]
+        # Combine embeddings similarity
+        score = max(title_similarity, domain_similarity)
         return round(score, 2)
 
     def skills_matching(self):
