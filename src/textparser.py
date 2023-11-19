@@ -18,7 +18,7 @@ def prompt_flow_jd_parser(job_description):
 
     system_message = '''You are an expert recruitment assistant specialized in parsing.
 Given a job description, you have to extract the necessary information understanding the context and domain.
-Necessary information includes keys "job_title", "skills_required", "experience_required", "minimum_education", "job_location", "job_type", "industry/domain"
+Necessary information includes keys "job_title", "skills_required", "experience_required", "minimum_education", "job_location", "job_type", "domain"
 
 The return type of response must be in json format like:
 {
@@ -41,7 +41,7 @@ Job type can be "in-office/hybrid/remote", if nothing mentioned and only locatio
     conversation.append({"role": "system", "content": system_message})
     conversation.append({"role": "user", "content": f'''Job_description: {job_description}.
 
-You are expert job description parser, returning the necessary keys "job_title", "skills_required", "experience_required", "minimum_education", "job_location", "job_type", "industry/domain".
+You are expert job description parser, returning the necessary keys "job_title", "skills_required", "experience_required", "minimum_education", "job_location", "job_type", "domain".
 Return only in json format.'''})
 
     return conversation
@@ -52,7 +52,7 @@ def prompt_flow_resume_parser(resume):
 
     system_message = '''You are an expert recruitment assistant specialized in resume parsing.
 Given a resume data, you have to extract the necessary information understanding the context and domain.
-Necessary information includes keys "job_title", "skills", "total_work_experience", "education", "location", "industry/domain"
+Necessary information includes keys "job_title", "skills", "total_work_experience", "education", "location", "domain"
 
 The return type of response must be in json format like:
 {
@@ -77,7 +77,7 @@ domain is like in which domain the person has worked like UI/UX, data science, s
     conversation.append({"role": "system", "content": system_message})
     conversation.append({"role": "user", "content": f'''Resume: {resume}.
 
-You are expert resume parser, returning the necessary keys "job_title", "skills", "work_experience", "total_work_experience", "education", "location", "industry/domain".
+You are expert resume parser, returning the necessary keys "job_title", "skills", "work_experience", "total_work_experience", "education", "location", "domain".
 Make sure the total work experience is correctly calculated.
 Return only in json format.'''})
 
