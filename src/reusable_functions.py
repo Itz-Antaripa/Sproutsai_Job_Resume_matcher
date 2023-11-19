@@ -2,11 +2,12 @@ from openai import OpenAI
 import openai
 from config import *
 
-
-def get_answer_from_openai(conversation_prompt, model_engine=GPT_3, temperature=temperature, top_p=top_p):
-    client = OpenAI(
+client = OpenAI(
         api_key=OPENAI_API_KEY,
     )
+
+
+def get_answer_from_openai(conversation_prompt, model_engine=GPT_3, temperature=temperature, top_p=top_p):
     try:
         completion = client.chat.completions.create(
             model=model_engine,
@@ -23,9 +24,9 @@ def get_answer_from_openai(conversation_prompt, model_engine=GPT_3, temperature=
 
 
 def get_embedding(text):
-    response = openai.Embedding.create(
+    response = client.embeddings.create(
         model="text-embedding-ada-002",
         input=text
     )
-    embedding = response.data[0].embedding
-    return embedding
+    embeddings = response.data[0].embedding
+    return embeddings

@@ -101,6 +101,5 @@ def get_resume_parse_data(resume):
         resume_parser_response = json.loads(response)
     except Exception as e:
         resume_parser_response = {}
-    print(resume_parser_response)
     return resume_parser_response
 

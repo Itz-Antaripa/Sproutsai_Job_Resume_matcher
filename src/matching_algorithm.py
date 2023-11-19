@@ -41,29 +41,23 @@ class Scorer:
     # title and domain matching
     def title_domain_matching(self):
         # Fuzzy matching for title and domain
-        title_match = fuzz.partial_ratio(self.resume["job_title"].lower(), self.job["job_title"].lower())
+        title_match = fuzz.ratio(self.resume["job_title"].lower(), self.job["job_title"].lower())
         domain_match = max(
-            fuzz.partial_ratio(domain.lower(), self.job["domain"].lower()) for domain in self.resume["domain"])
+            fuzz.ratio(domain.lower(), self.job["domain"].lower()) for domain in self.resume["domain"])
         # Embeddings matching
         resume_title_embedding = np.array(get_embedding(self.resume["job_title"] + "," + ",".join(self.resume["domain"]))).reshape(1, -1)
         job_title_embedding = np.array(get_embedding(self.job["job_title"] + "," + self.job["domain"])).reshape(1, -1)
         domain_similarity = cosine_similarity(resume_title_embedding, job_title_embedding)[0][0]
         # Combine keyword matching and embeddings similarity
-        score = max(title_match, domain_match, domain_similarity)
+        score = max(title_match/100, domain_match/100, domain_similarity)
         return round(score, 2)
 
     def skills_matching(self):
-        # Fuzzy matching for skills
-        max_skill_similarity = max(
-            fuzz.partial_ratio(skill.lower(), job_skill.lower()) for skill in self.resume["skills"] for job_skill in
-            self.job["skills_required"])
         # Embeddings matching
         resume_skills_embedding = np.array(get_embedding(" ".join(self.resume["skills"]))).reshape(1, -1)
         job_skills_embedding = np.array(get_embedding(" ".join(self.job["skills_required"]))).reshape(1, -1)
         skills_similarity = cosine_similarity(resume_skills_embedding, job_skills_embedding)[0][0]
-        # Combine fuzzy matching and embeddings similarity
-        combined_score = (max_skill_similarity + skills_similarity) / 2
-        return round(combined_score, 2)
+        return round(skills_similarity, 2)
 
     def experience_matching(self):
         candidate_experience = self.resume["total_work_experience"]
@@ -103,6 +97,7 @@ class Scorer:
         score_skills = self.skills_matching()
         score_experience = self.experience_matching()
         score_location = self.location_matching()
+        print(score_degree, score_title_domain, score_skills, score_experience, score_location)
 
         # Combine scores with weights
         final_score = (

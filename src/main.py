@@ -48,7 +48,6 @@ async def score_latest(data_type: str = Query(..., description="Type of Data (re
         for jd in job_descriptions:
             scorer = Scorer(resume=latest_resume, job=jd)
             score = scorer.calculate_final_score()
-            scores.append({"jd_id": jd["_id"], "score": score})
             scores.append({
                 "id": jd["jd_id"],
                 "score": score,
@@ -74,7 +73,7 @@ async def score_latest(data_type: str = Query(..., description="Type of Data (re
                 "score": score,
                 "parsed_data": {
                     "job_title": resume["job_title"],
-                    "skills": resume["skills_required"],
+                    "skills": resume["skills"],
                     "total_work_experience": resume["total_work_experience"],
                     "domain": resume["domain"]
                 }
